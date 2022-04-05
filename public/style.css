@@ -1,0 +1,193 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    
+}
+body{
+    display: flex;
+    flex-direction: column;
+    background:url(https://cdn.discordapp.com/attachments/783319533443874828/909734648555393064/bg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+}
+/*header*/
+header{
+    position: relative;
+    color: white;
+    margin: 1em;
+}
+header img{
+    width: 2em;
+}
+.location,.title,.flag{
+    position: absolute;
+}
+.location{
+    right: 4em;
+}
+.flag{
+    margin-left: 10px;
+}
+
+/*jam */
+.jam{
+    display: flex;
+
+    flex-direction: column;
+    /* margin-bottom: ; */
+    /* border: blue 1px solid; */
+    align-items: center;
+    justify-content: center;
+    min-width: fit-content;
+    min-height: fit-content;
+    padding: 10px;
+    color: rgb(255, 255, 255);
+}
+.kumpjam{
+    display: flex;
+    min-width: fit-content;
+    min-height: fit-content;
+    font-size: 56px;
+    /* color: rgb(225, 220, 220); */
+
+}
+.kumptgl{
+    min-width: fit-content;
+    min-height: fit-content;
+    padding: 5px;
+    display: flex;
+    letter-spacing: 3px;
+}
+.kumptgl h1{
+    margin: 5px;
+}
+/*form and button country*/
+.input-country{
+    margin: 0px auto;
+}
+#country,#country-btn,#country:focus{
+    padding: 0.5em 1em;
+    background-color: transparent;
+    color: white;
+
+    border: rgb(255, 187, 0) 1px solid;
+    border-radius: 20px;
+}
+
+#country{
+    width: 50em;
+    margin-bottom: 0.5em;
+}
+
+
+#country-btn:hover{
+    cursor: pointer;
+    border: rgb(136, 255, 0) 1px solid;
+
+}
+/*region*/
+.region{
+    color: white;
+    margin: auto;
+}
+/*tampilan data*/
+.wrapper{
+
+    flex-wrap: wrap;
+    display: flex;
+    margin: 0px auto;
+    width: fit-content;
+    /* margin-bottom: 5px; */
+    height: fit-content;
+    padding: 20px 10px 0px 10px;
+    border-radius: 20px; 
+    /* border: blue 1px solid; */
+}
+.isi{
+    margin: 1em;
+    width: calc(100/3);
+    height: fit-content;
+    background: rgba(255, 255, 255, 0.542);
+    box-shadow: 0 8px 32px 0 rgba(162, 162, 165, 0.556);
+    backdrop-filter: blur( 5px );
+    -webkit-backdrop-filter: blur( 5px );
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 20px;
+    border-radius: 10px;
+}
+.isi span{
+    margin: 0px 10px;
+    font-size: 25px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    /* color: rgb(43, 43, 43); */
+    filter: drop-shadow(0 5px 5px rgba(44, 44, 44, 0.261));
+}
+.isi span.satu{
+    color: rgb(22, 59, 208);
+    filter: drop-shadow(0 5px 5px rgba(44, 44, 44, 0.261));
+}
+.isi span.dua{
+    color: rgb(6, 114, 6);
+    
+}
+.isi span.tiga{
+    color: rgb(202, 57, 57);
+}
+.isi h1 {
+    color: rgb(43, 43, 43);
+    font-size: 40px;
+}
+/*detail*/
+.see-detail{
+    margin: 0px auto;
+}
+.see-detail a{
+    color: rgb(255, 255, 255);
+}.isi-detail{
+    width: 1000px;
+    height: 90px;
+
+}
+summary{
+    font-family: 'Poppins', sans-serif;
+    color: white;
+}
+summary:hover{
+    cursor: pointer;
+}
+details[open] summary ~ * {
+    animation: sweep .5s ease-in-out;
+  }
+  
+  @keyframes sweep {
+    0%    {opacity: 0; margin-left: -10px}
+    100%  {opacity: 1; margin-left: 0px}
+  }
+
+.isi-detail table{
+    width: 100%;
+}
+.isi-detail td, .isi-detail th{
+    background-color: rgba(233, 233, 233, 0.6);
+    text-align: center;
+}
+/* 404 page */
+.not{
+    background-color: #fff;
+    flex-direction: column;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

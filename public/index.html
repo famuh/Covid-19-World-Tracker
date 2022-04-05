@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="assets/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+    <title>Covid-19 Data Global Tracker</title>
+</head>
+
+<body>
+    <header>
+        <h2 class="title">World Covid-19 Tracker</h2>
+        <h3 class="location">Region : <span id="location"></span> <img src="" alt="" id="flag" class="flag"></h3>
+        
+    </header>
+    
+    <div class="jam">
+        <div class="kumpjam">
+            <h1 class="hour" id="jam"></h1>
+            <h1>:</h1>
+            <h1 class="min" id="menit"></h1>
+        </div>
+        <div class="kumptgl">
+            <h1 id="hari">hari,</h1>
+            <h1 id="bulan">bulan </h1>
+            <h1 id="tgl">tgl </h1>
+            <h1 id="tahun">tahun</h1>
+        </div>
+    </div>
+    <!--
+    <div class="region">
+        <h3 class="location">Region : <span id="location"></span></h3>
+    </div>
+-->
+    <div class="input-country">
+        <form id="myForm">
+            <input type="text" name="country" id="country" placeholder="Enter Country Using English" required>
+            <br>
+            <input type="submit" name="country" id="country-btn" value="Get Data">
+        </form>
+    </div>
+
+
+
+    <div class="wrapper">
+        <div class="isi">
+            <span class="satu">Positive</span>
+            <span class="angka" id="positif">-</span>
+        </div>
+        <div class="isi">
+            <span class="dua">Recovered</span>
+            <span class="angka" id="sembuh">-</span>
+        </div>
+        <div class="isi">
+            <span class="tiga">Deaths</span>
+            <span class="angka" id="mati">-</span>
+        </div>
+    </div>
+
+    <div class="see-detail">
+        <details>
+            <summary>More Details</summary>
+            <div class="isi-detail">
+                <table>
+                    <tr>
+                        <th>Case</th>
+                        <th>Critical</th>
+                        <th>Total test done</th>
+
+                        <th>Case Per One Million</th>
+                        <th>Deaths Per One Million</th>
+                        <th>Tests Per One Million</th>
+                    </tr>
+                    <tr>
+                        <td id="cases"></td>
+                        <td id="critical"></td>
+                        <td id="testDone"></td>
+                        <td id="caseOM"></td>
+                        <td id="deathsOM"></td>
+                        <td id="testsOM"></td>
+                    </tr>
+                </table>
+            </div>
+        </details>
+    </div>
+</body>
+<script src="script.js"></script>
+<script src="api.js"></script>
+<script type="module" src="/yangke2.js"></script>
+
+
+</html>
